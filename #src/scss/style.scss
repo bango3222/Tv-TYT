@@ -1,15 +1,16 @@
-@mixin font($font_name, $file_name, $weight, $style){
-  @font-face {
-    font-family: $file_name;
-    font-display: swap;
-    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
-    font-weight: #{$weight};
-    font-style: #{$style};
-  }
-  
-}
 
 @import 'fonts';
+@mixin font($font_name, $file_name, $weight, $style) {
+
+  @font-face {
+  font-family: $font_name;
+  font-display: swap;
+  src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+  font-weight: #{$weight};
+  font-style: #{$style};
+  }
+  }
+
 *,
 *::before,
 *::after {
@@ -18,12 +19,16 @@
 
 @import 'header';
 
+html,
 body{
   height: 100%;
-  font-size: ;
-  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
-.wrapper {
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 

@@ -155,7 +155,7 @@ function fontsStyle(params) {
   }
   }
   
-function cb() { }
+  function cb() { }
 
 function watchFiles(params){
     gulp.watch([path.watch.html],html);
