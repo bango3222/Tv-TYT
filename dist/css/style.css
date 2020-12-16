@@ -5,6 +5,7 @@
           box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .header__topinfo {
   background-color: #f2f2f2;
   display: -webkit-box;
@@ -111,3 +112,9 @@ body {
           flex-direction: column;
   min-height: 100vh;
 }
+=======
+/*test*/
+body {
+  height: 100%;
+}
+>>>>>>> 4870d7fecc73737bb8d96be80d3088d6ae3dc133
