@@ -1,3 +1,4 @@
+/*@import "fonts.css";*/
 *,
 *::before,
 *::after {
@@ -5,7 +6,6 @@
           box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 .header__topinfo {
   background-color: #f2f2f2;
   display: -webkit-box;
@@ -95,11 +95,132 @@
   padding-right: 0px;
 }
 
-html,
-body {
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+.footer {
+  padding-top: 20px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+
+.footer__info {
+  flex: 5;
+  margin: 30px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__tel {
+  margin: 27px 0 15px;
+}
+
+.footer__tel a{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000000;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+}
+
+.footer__tel a:hover {
+  color: #FF5823;
+}
+
+.footer__mail a{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000000;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+}
+
+.footer__mail a:hover {
+  color: #FF5823;
+}
+
+.footer__ul {
+  list-style: none;
+}
+
+.footer__yandex {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.footer__img {
+  object-fit: contain;
+  object-position: left;
+  width: 120px;
+}
+
+.footer__menu {
+  flex: 3;
+  display: flex;
+  margin: 27px 20px;
+}
+
+.footer__menu li {
+  margin-bottom: 15px;
+}
+
+.footer__column {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.footer__column:nth-child(1) {
+  flex: 2;
+  margin-left: 62px;
+}
+
+.footer__column:nth-child(2) {
+  flex: 3;
+}
+
+
+.footer__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 26px;
+  border: 2px solid transparent;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.footer__link:hover {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #FF5823;
+}
+
+.footer__under {
+  margin-top: 85px;
+  background: #EBEBEB;
+  padding: 5px 0 5px 15px;
+}
+
+.footer__privacy {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.footer__privacy:hover {
+  opacity: .7;
 }
 
 .wrapper {
@@ -112,9 +233,7 @@ body {
           flex-direction: column;
   min-height: 100vh;
 }
-=======
 /*test*/
 body {
   height: 100%;
 }
->>>>>>> 4870d7fecc73737bb8d96be80d3088d6ae3dc133
