@@ -1,9 +1,14 @@
-/*@import "fonts.css";*/
+@import "fonts.css";
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: HelveticaNeueCyr, serif;
 }
 
 .header__topinfo {
@@ -233,7 +238,4 @@
           flex-direction: column;
   min-height: 100vh;
 }
-/*test*/
-body {
-  height: 100%;
-}
+
