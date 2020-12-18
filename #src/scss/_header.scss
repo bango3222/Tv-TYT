@@ -44,7 +44,8 @@
     &__list {
         display: flex;
         justify-content: space-between;
-        width: 747px;
+        max-width: 747px;
+        width: 100%;
 
     }
 
