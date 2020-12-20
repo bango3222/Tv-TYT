@@ -17,7 +17,7 @@ let path = {
     css: source_folder + "/scss/*.{scss,css}",
     js: source_folder + "/js/*.js",
     img: source_folder + "/img/**/*.{png,jpg,svg,gif,ico,webp}",
-    fonts: source_folder + "/fonts/*.ttf"
+    fonts: source_folder + "/fonts/*"
   },
   watch: {
     html: source_folder + "/**/*.html",
@@ -26,7 +26,7 @@ let path = {
     img: source_folder + "/img/**/*.{png,jpg,svg,gif,ico,webp}"
   },
   clean: "./" + project_folder + "/"
-}
+};
 
 let { src, dest } = require('gulp'),
   gulp = require('gulp'),
@@ -101,7 +101,7 @@ function css(){
     .pipe(
         autoprefixer({
            overrideBrowserslist: ["last 5 versions"],
-           cascade: true 
+           cascade: true
         })
     )
     .pipe(dest(path.build.css))
@@ -126,13 +126,13 @@ function fonts(params){
    .pipe(dest(path.build.fonts));
 }
 
-gulp.task('otf2ttf', function(){
-  return src([source_folder + '/fonts/*.otf'])
-    .pipe(fonter({
-      formats: ['ttf']
-    }))
-    .pipe(dest(source_folder + '/fonts/'));
-})
+// gulp.task('otf2ttf', function(){
+//   return src([source_folder + '/fonts/*.otf'])
+//     .pipe(fonter({
+//       formats: ['ttf']
+//     }))
+//     .pipe(dest(source_folder + '/fonts/'));
+// })
 
 function watchFiles(params){
     gulp.watch([path.watch.html],html);
