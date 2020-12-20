@@ -204,6 +204,30 @@ body {
   font-size: 24px;
 }
 
+html h2,
+body h2 {
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 138%;
+}
+
+html h3,
+body h3 {
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 105%;
+}
+
+html a,
+body a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,6 +274,97 @@ body {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   border-radius: 2px;
+}
+
+.body__services {
+  padding: 0 14px 0 14px;
+  margin-top: 140px;
+}
+
+.body__services h2 {
+  margin-bottom: 89px;
+  line-height: 138%;
+}
+
+.body__services-wrapper {
+  margin-left: 203px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-wrapper__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 120px;
+}
+
+.services-wrapper__columns img {
+  max-height: 220px;
+  max-width: 247px;
+}
+
+.services-wrapper__text {
+  margin-left: 70px;
+}
+
+.services-wrapper__text h3 {
+  max-width: 330px;
+  margin-bottom: 23px;
+}
+
+.services-wrapper__text p {
+  max-width: 330px;
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 135%;
+}
+
+.body__sections {
+  max-width: 1920px;
+  padding: 0px 14px;
+  margin-top: 140px;
+}
+
+.body__sections h2 {
+  margin-bottom: 69px;
+}
+
+.body__sections-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-bottom: 40px;
+}
+
+.sections-row__img1 img {
+  max-width: 1168px;
+  max-height: 491px;
+  margin-bottom: 14px;
+}
+
+.sections-row__img2 img {
+  max-width: 501px;
+  max-height: 491px;
+  margin-bottom: 14px;
+}
+
+.sections-row__img3 img {
+  max-width: 990px;
+  max-height: 491px;
+  margin-bottom: 14px;
+}
+
+.sections-row__img4 img {
+  max-width: 680px;
+  max-height: 491px;
+  margin-bottom: 14px;
 }
 
 .footer {
