@@ -354,6 +354,13 @@ body a {
   color: #000000;
 }
 
+html h1,
+body h1 {
+  font-style: normal;
+  font-size: 72px;
+  line-height: 138%;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,4 +658,123 @@ body a {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.delivery__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0px 14px;
+  margin-right: 35px;
+  margin-top: 150px;
+  margin-bottom: 140px;
+}
+
+.delivery__banner-text {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.delivery__banner-text h1 {
+  margin-bottom: 82px;
+  font-weight: 300;
+}
+
+.delivery__banner-text p {
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 105%;
+  max-width: 591px;
+}
+
+.delivery__payment {
+  padding: 0px 14px;
+  margin-bottom: 140px;
+}
+
+.delivery__payment h2 {
+  margin-bottom: 15px;
+}
+
+.delivery__payment-blok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 203px;
+}
+
+.delivery__payment-blok img {
+  margin-right: 301px;
+}
+
+.delivery__payment-blok p {
+  max-width: 614px;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 135%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.delivery__pick-up {
+  padding: 0px 14px;
+  margin-bottom: 140px;
+}
+
+.delivery__pick-up h2 {
+  margin-bottom: 62px;
+}
+
+.delivery__pick-up-blok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 135%;
+}
+
+.delivery__pick-up-blok-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 203px;
+}
+
+.text-black {
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 24px;
+  line-height: 135%;
 }

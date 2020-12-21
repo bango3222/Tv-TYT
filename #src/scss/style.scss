@@ -31,6 +31,12 @@ body{
     text-decoration: none;
     color: #000000;
   }
+  h1{
+    font-style: normal;
+    font-size: 72px;
+    line-height: 138%;
+  }
+  
 }
 
 .wrapper {
@@ -178,3 +184,6 @@ body{
 }
 
 @import 'footer';
+
+
+@import 'delivery';
