@@ -1,0 +1,39 @@
+@@include('_header.html')
+<section class="slider">
+    <h2 class="slider__title">Лучшие <br/> товары месяца</h2>
+    <div class="slider__container swiper-container" id="slider">
+        <!-- Additional required wrapper -->
+        <div class=" swiper-wrapper">
+            <!-- Slides -->
+            <div class="slider__card swiper-slide" href="#">
+                <img class="slider__img" src="../img/good.png" alt="" />
+                <div class="slider__body">
+                    <p class="slider__name">Холодильник (Side-by-Side) Haier HRF-541DG7RU</p>
+                    <div class="slider__menu">
+                        <a class="slider__icon" href="#">
+                            <object type="image/svg+xml" data="../img/icon/ic-actions-heart.svg" width="40" height="40" >
+                                Your browser does not support SVG
+                            </object>
+                        </a>
+                        <p class="slider__price">79 620 ₽</p>
+                        <a class="slider__icon" href="#">
+                            <object type="image/svg+xml" data="../img/icon/ic-media-mixer.svg" width="40" height="40" >
+                                Your browser does not support SVG
+                            </object>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="slider__container">
+
+    </div>
+</section>
+@@include('_footer.html')

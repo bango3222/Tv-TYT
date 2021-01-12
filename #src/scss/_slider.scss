@@ -1,0 +1,65 @@
+.slider {
+  padding: 70px 14px;
+
+  &__title {
+    margin-bottom: 89px;
+    line-height: 138%;
+  }
+
+  &__card {
+    padding: 30px 40px;
+    max-width: 415px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s;
+  }
+
+  &__card:hover {
+    box-shadow: 0px 0px 65px rgba(0, 0, 0, 0.2);
+  }
+
+  &__img {
+    max-width: 335px;
+    object-fit: contain;
+  }
+
+  &__body {
+    margin-top: 60px;
+  }
+  
+  &__name {
+    max-width: 315px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 114%;
+    max-height: 54px;
+    overflow: hidden;
+  }
+
+  &__menu {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+
+  &__icon svg{
+    width: 35px;
+    height: 35px;
+  }
+  
+  &__price {
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+  }
+}
