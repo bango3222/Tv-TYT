@@ -1,0 +1,42 @@
+.catalog {
+    padding: 0 50px;
+    margin-top: 10px;
+
+    &__sections {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 180px;
+    }
+
+    &__section-col {
+    }
+}
+.section-col {
+
+    &__title {
+        display: flex;
+        align-items: center;
+        max-width: 370px;
+        margin-bottom: 35px;
+        img{
+            margin-right: 20px;
+        }
+    }
+
+    &__src {
+        display: flex;
+        flex-direction: column;
+        a{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 85%;
+            margin-bottom: 15px;
+            padding-bottom: 4px;
+            transition: all .2s;
+        }
+        a:hover{
+            color:  #FF5823;
+        }
+    }
+}
