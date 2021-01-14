@@ -928,6 +928,52 @@ body h1 {
   margin-bottom: 10px;
 }
 
+.favorites {
+  padding: 0 14px;
+  margin-top: 10px;
+}
+
+.favorites h2 {
+  margin-bottom: 281px;
+}
+
+.favorites__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.favorites__row p {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 105%;
+}
+
+.favorites__row a {
+  border: 2px solid transparent;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.favorites__row a:hover {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #FF5823;
+}
+
+.favorites__row:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.favorites__row:nth-child(2) p {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #FF5823;
+}
+
 .slider {
   padding: 70px 14px;
 }
