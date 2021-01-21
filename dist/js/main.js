@@ -1,25 +1,31 @@
-$(function(){
+$(document).ready(function(){
+    const sliderCard = $('.slider__card');
 
-});
+    sliderCard.on('mouseenter', function() {
 
-// const mySwiper = new Swiper('#slider', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-//
-//     // If we need pagination
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
-//
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-//
-//     // And if we need scrollbar
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//     },
-// })
+        $(this).find('.slider__icon').addClass('active-icon');
+        $(this).find('.slider__button').addClass('active-button')
+    })
+
+    sliderCard.on('mouseleave', ()=> {
+        $(this).find('.slider__icon').removeClass('active-icon');
+        $(this).find('.slider__button').removeClass('active-button')
+    })
+})
+
+
+
+new Swiper('#slider', {
+    // Optional parameters
+    // direction: 'horizontal',
+
+    // If we need pagination
+    slidesPerView: 4,
+    spaceBetween: 70,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true
+    },
+    autoHeight: true
+
+})

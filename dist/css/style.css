@@ -780,16 +780,15 @@ body h1 {
 }
 
 .slider {
-  padding: 70px 14px;
+  padding: 70px 0;
 }
 
 .slider__title {
-  margin-bottom: 89px;
+  margin-bottom: 44px;
   line-height: 138%;
 }
 
 .slider__card {
-  padding: 30px 40px;
   max-width: 415px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -807,6 +806,26 @@ body h1 {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  background-color: #FFFFFF;
+}
+
+.slider__container {
+  padding-left: 220px;
+  margin-top: 45px;
+  height: 650px;
+  z-index: initial;
+}
+
+.slider__scrollbar {
+  background: #EDEDED;
+  height: 2px !important;
+  bottom: 70px !important;
+  left: 0 !important;
+  z-index: initial !important;
+}
+
+.slider__scrollbar .swiper-scrollbar-drag {
+  background-color: #781ECD;
 }
 
 .slider__card:hover {
@@ -821,11 +840,10 @@ body h1 {
 }
 
 .slider__body {
-  margin-top: 60px;
+  padding: 30px 40px 50px;
 }
 
 .slider__name {
-  max-width: 315px;
   text-align: center;
   font-size: 24px;
   line-height: 114%;
@@ -833,8 +851,13 @@ body h1 {
   overflow: hidden;
 }
 
+.slider__footer {
+  padding: 0 30px 0px;
+  width: 100%;
+}
+
 .slider__menu {
-  margin-top: 50px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,19 +870,71 @@ body h1 {
 }
 
 .slider__icon {
+  visibility: hidden;
+  opacity: 0;
   width: 40px;
   height: 40px;
-  display: block;
+  cursor: pointer;
+  -webkit-transition: opacity .3s ease-in-out, visibility .4s;
+  -o-transition: opacity .3s ease-in-out, visibility .4s;
+  transition: opacity .3s ease-in-out, visibility .4s;
+  -webkit-filter: invert(15%) sepia(97%) saturate(7483%) hue-rotate(261deg) brightness(109%) contrast(103%);
+          filter: invert(15%) sepia(97%) saturate(7483%) hue-rotate(261deg) brightness(109%) contrast(103%);
 }
 
-.slider__icon svg {
-  width: 35px;
-  height: 35px;
+.slider__icon.active-icon {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease-in-out, visibility .4s;
+  -o-transition: opacity .3s ease-in-out, visibility .4s;
+  transition: opacity .3s ease-in-out, visibility .4s;
 }
 
 .slider__price {
+  width: 100%;
   font-weight: 100;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+}
+
+.slider__button {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+  cursor: pointer;
+  width: 100%;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  background: #FF5823;
+  border-radius: 2px;
+  color: #FFFFFF;
+  border: 0;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  height: 40px;
+}
+
+.slider__button.active-button {
+  visibility: visible;
+  -webkit-transition: visibility .6s ease, opacity .7s ease-in-out, margin-top .6s ease-in-out, background-color .6s;
+  -o-transition: visibility .6s ease, opacity .7s ease-in-out, margin-top .6s ease-in-out, background-color .6s;
+  transition: visibility .6s ease, opacity .7s ease-in-out, margin-top .6s ease-in-out, background-color .6s;
+  opacity: 1;
+  margin-top: 30px;
+}
+
+.slider__button:hover {
+  background: #651FFF;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.slider__button:focus {
+  outline: none;
 }

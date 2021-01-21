@@ -1,19 +1,38 @@
 .slider {
-  padding: 70px 14px;
+  padding: 70px 0;
 
   &__title {
-    margin-bottom: 89px;
+    margin-bottom: 44px;
     line-height: 138%;
   }
 
   &__card {
-    padding: 30px 40px;
     max-width: 415px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     transition: .3s;
+    background-color: #FFFFFF;
+  }
+
+  &__container {
+    padding-left: 220px;
+    margin-top: 45px;
+    height: 650px;
+    z-index: initial;
+  }
+
+
+  &__scrollbar {
+    background: #EDEDED;
+    height: 2px !important;
+    bottom: 70px !important;
+    left: 0 !important;
+    z-index: initial !important;
+    .swiper-scrollbar-drag {
+      background-color: #781ECD;
+    }
   }
 
   &__card:hover {
@@ -26,11 +45,10 @@
   }
 
   &__body {
-    margin-top: 60px;
+    padding: 30px 40px 50px;
   }
   
   &__name {
-    max-width: 315px;
     text-align: center;
     font-size: 24px;
     line-height: 114%;
@@ -38,28 +56,75 @@
     overflow: hidden;
   }
 
+  &__footer {
+    padding: 0 30px 0px;
+    width: 100%;
+  }
+
   &__menu {
-    margin-top: 50px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
 
   &__icon {
+    visibility: hidden;
+    opacity: 0;
     width: 40px;
     height: 40px;
-    display: block;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out, visibility .4s;
+    filter: invert(15%) sepia(97%) saturate(7483%) hue-rotate(261deg) brightness(109%) contrast(103%);
   }
 
-  &__icon svg{
-    width: 35px;
-    height: 35px;
+  &__icon.active-icon {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s ease-in-out, visibility .4s;
   }
-  
+
   &__price {
+    width: 100%;
     font-weight: 100;
     font-size: 24px;
     line-height: 120%;
     text-align: center;
+  }
+
+  &__button {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    background: #FF5823;
+    border-radius: 2px;
+    color: #FFFFFF;
+    border: 0;
+    transition: all .5s ease-in-out;
+    height: 40px;
+  }
+
+  &__button.active-button {
+    visibility: visible;
+    transition: visibility .6s ease, opacity .7s ease-in-out, margin-top .6s ease-in-out, background-color .6s;
+    opacity: 1;
+    margin-top: 30px;
+  }
+
+  &__button:hover {
+    background: #651FFF;
+    transition: all .5s ease-in-out;
+  }
+
+  &__button:focus {
+    outline: none;
   }
 }
